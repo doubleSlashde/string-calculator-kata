@@ -6,7 +6,8 @@ Original site: https://osherove.com/tdd-kata-1.
 
 == Requirements
 
-* Java 11
+* Java 21
+* Junit 5
 * Maven
 
 == The TDD Cycle
@@ -31,10 +32,10 @@ image::TDD-Cycle.png[]
 .Step 1
 [%collapsible]
 ====
-Create a new method named `int add(String number)` in class `StringCalculator`.
+Create a new method named `int add(String numbers)` in class `StringCalculator`.
 
-1. The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0). Example inputs: `""` or `""` or `"1,2"`
-2. Start with the simplest test case of an empty string, and move to one and two numbers
+1. The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0). Example inputs: `""` or `"1"` or `"1,2"`.
+2. Start with the simplest test case of an empty string, and move to one and two numbers.
 3. Remember to solve things as simply as possible, so that you force yourself to write tests you did not think about.
 4. Remember to refactor after each passing test.
 ====
