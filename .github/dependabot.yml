@@ -9,7 +9,6 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily" # scan every day
-    # Allow only patch and minor updates, implicitly ignoring major updates
-    allow:
+    ignore:
       - dependency-name: "*"
-        update-types: [ "patch", "minor" ]
+        update-types: ["version-update:semver-major"]
