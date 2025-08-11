@@ -12,11 +12,3 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    groups:
-       # Specify a name for the group, which will be used in pull request titles
-       # and branch names
-       dev-dependencies:
-          # Define patterns to include dependencies in the group (based on
-          # dependency name)
-          patterns:
-            - "*"
